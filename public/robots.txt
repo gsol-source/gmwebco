@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /manage
+Disallow: /api/
+
+Sitemap: https://gmwebco.com/sitemap.xml

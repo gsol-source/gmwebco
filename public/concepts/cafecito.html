@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafecito Club — a concept by GM Web Co.</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Design concept for a neighborhood café, made by GM Web Co. Not a real business." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..800,100&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style data-concept-style>
+    .cx { --cream:#fbf1e6; --pink:#f3c3c9; --tomato:#d63c27; --ink:#2b1915; --dim:rgba(43,25,21,.66); --line:rgba(43,25,21,.14);
+      position:relative; container-type:inline-size; background:var(--cream); color:var(--ink); font:400 16px/1.5 Figtree,system-ui,sans-serif;
+      -webkit-font-smoothing:antialiased; min-height:var(--screen-h,100svh); overflow:hidden; }
+    .cx *, .cx *::before, .cx *::after { box-sizing:border-box; margin:0; padding:0; }
+    .cx a { color:inherit; text-decoration:none; }
+    .cx .soft { font-family:Fraunces,Georgia,serif; font-variation-settings:"SOFT" 100; }
+
+    .cx .top { display:flex; justify-content:space-between; align-items:center; padding:26px 48px; }
+    .cx .mark { font-family:Fraunces,serif; font-variation-settings:"SOFT" 100; font-weight:800; font-size:26px; }
+    .cx .mark b { color:var(--tomato); }
+    .cx .links { display:flex; gap:30px; font-weight:600; font-size:15px; align-items:center; }
+    .cx .order { background:var(--ink); color:var(--cream); padding:11px 20px; border-radius:40px; }
+
+    .cx .hero { display:grid; grid-template-columns:1.15fr 1fr; gap:40px; align-items:center; padding:12px 48px 0; height:calc(var(--screen-h,100svh) - 94px); min-height:520px; }
+    .cx h1 { font-family:Fraunces,serif; font-variation-settings:"SOFT" 100; font-weight:800; font-size:124px; line-height:.9; letter-spacing:-.03em; }
+    .cx h1 em { font-style:normal; color:var(--tomato); }
+    .cx .sub { font-size:19px; color:var(--dim); max-width:24em; margin:26px 0 30px; }
+    .cx .ctas { display:flex; gap:12px; align-items:center; }
+    .cx .btn { background:var(--tomato); color:#fff; font-weight:700; padding:16px 28px; border-radius:40px; }
+    .cx .ctas span { font-weight:600; font-size:15px; }
+    .cx .arch { position:relative; align-self:end; height:92%; border-radius:999px 999px 0 0; overflow:hidden; background:var(--pink); }
+    .cx .arch video, .cx .arch img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .cx .sticker { position:absolute; z-index:2; left:-4%; top:16%; width:132px; height:132px; border-radius:50%; background:var(--pink); color:var(--ink);
+      display:grid; place-items:center; text-align:center; font-family:Fraunces,serif; font-variation-settings:"SOFT" 100; font-weight:700; font-size:17px; line-height:1.1; transform:rotate(-12deg); }
+    .cx .hero-art { position:relative; height:100%; display:flex; }
+    .cx .hero-art .arch { flex:1; }
+
+    .cx .board { background:var(--ink); color:var(--cream); padding:80px 48px; display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+    .cx .board h2 { grid-column:1/-1; font-family:Fraunces,serif; font-variation-settings:"SOFT" 100; font-weight:700; font-size:56px; margin-bottom:36px; }
+    .cx .board div { border-top:1px solid rgba(251,241,230,.2); padding:18px 20px 0 0; }
+    .cx .board b { display:block; font-size:19px; }
+    .cx .board small { color:rgba(251,241,230,.6); font-size:14px; }
+    .cx .board p { font-family:Fraunces,serif; font-size:30px; margin-top:12px; color:var(--pink); }
+    .cx .credit { padding:26px 48px; font-size:12px; color:var(--dim); }
+
+    @container (max-width: 700px) {
+      .cx .top { padding:18px 20px; }
+      .cx .links a:not(.order) { display:none; }
+      .cx .hero { grid-template-columns:1fr; height:auto; padding:8px 20px 0; gap:28px; }
+      .cx h1 { font-size:64px; }
+      .cx .sub { font-size:16px; margin:16px 0 22px; }
+      .cx .hero-art { height:330px; }
+      .cx .sticker { width:96px; height:96px; font-size:13px; left:auto; right:-2%; top:8%; }
+      .cx .board { grid-template-columns:1fr 1fr; padding:48px 20px; row-gap:24px; }
+      .cx .board h2 { font-size:38px; margin-bottom:12px; }
+      .cx .credit { padding:22px 20px; }
+    }
+  </style>
+</head>
+<body class="cx-page" style="margin:0;background:#fbf1e6">
+  <div class="cx">
+    <header class="top">
+      <a href="#" class="mark">Cafecito <b>Club</b></a>
+      <nav class="links" aria-label="Cafecito Club"><a href="#menu">Menu</a><a href="#menu">Catering</a><a href="#" class="order">Order ahead</a></nav>
+    </header>
+    <section class="hero">
+      <div>
+        <h1>Cafecito's on at <em>seven.</em></h1>
+        <p class="sub">Cuban coffee, guava pastries and the good kind of gossip. Order from your phone and skip the line.</p>
+        <div class="ctas"><a href="#" class="btn">Order for pickup</a><span>Ready in ~6 min</span></div>
+      </div>
+      <div class="hero-art">
+        <p class="sticker" aria-hidden="true">Skip the line</p>
+        <div class="arch"><video autoplay muted loop playsinline poster="/media/open.jpg" aria-hidden="true"><source src="/media/open.mp4" type="video/mp4" /></video></div>
+      </div>
+    </section>
+    <section class="board" id="menu">
+      <h2>On the counter</h2>
+      <div><b>Colada</b><small>four shots, to share</small><p>$3</p></div>
+      <div><b>Cortadito</b><small>evaporated milk</small><p>$3.5</p></div>
+      <div><b>Pastelito</b><small>guava &amp; cheese</small><p>$2.5</p></div>
+      <div><b>Tostada</b><small>pressed, buttered</small><p>$4</p></div>
+    </section>
+    <p class="credit">Cafecito Club is a design concept by GM Web Co. It is not a real business.</p>
+  </div>
+</body>
+</html>

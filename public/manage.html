@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Your call — GM Web Co.</title>
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <header class="nav scrolled"><div class="container nav-inner"><a href="/" class="logo"><img src="/logo-icon.svg" alt="" width="32" height="32" />GM Web Co.</a><a href="/#book" class="btn btn-sm">Book a call</a></div></header>
+  <main id="main" class="container doc manage">
+    <p class="label">Your booking</p>
+    <h1 id="mTitle">Loading your call…</h1>
+    <p class="muted" id="mWhen"></p>
+    <p class="error" id="mError" role="alert"></p>
+
+    <div id="mActions" hidden>
+      <div class="manage-actions">
+        <a id="mMeet" class="btn" target="_blank" rel="noopener" hidden>Open Google Meet</a>
+        <button class="btn btn-ghost" id="mShowMove">Pick a new time</button>
+        <button class="btn btn-ghost btn-danger-ghost" id="mShowCancel">Cancel my call</button>
+      </div>
+
+      <div class="book-card manage-card" id="mCancelBox" hidden>
+        <p><b>Cancel this call?</b> The time opens up for someone else, and you’ll get a cancellation email from Google Calendar.</p>
+        <div class="manage-actions">
+          <button class="btn" id="mCancelYes">Yes, cancel it</button>
+          <button class="btn btn-ghost" id="mCancelNo">Keep my call</button>
+        </div>
+      </div>
+
+      <div class="book-card manage-card" id="mMoveBox" hidden>
+        <p class="book-step"><span>1</span> Pick a date</p>
+        <div class="days" id="days"></div>
+        <p class="book-step"><span>2</span> Pick a time</p>
+        <div class="times" id="times"><p class="muted small">Select a date first.</p></div>
+        <p class="selected" id="selectedText" aria-live="polite">No time selected.</p>
+        <button class="btn btn-block" id="mMoveYes" disabled>Move my call</button>
+      </div>
+    </div>
+
+    <p class="muted small manage-help">Questions? Email <a href="mailto:gm.webco.com@gmail.com">gm.webco.com@gmail.com</a></p>
+  </main>
+  <script src="/manage.js"></script>
+</body>
+</html>

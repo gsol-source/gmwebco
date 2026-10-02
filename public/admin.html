@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="color-scheme" content="light" />
+  <title>Admin — GM Web Co.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="logo-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin">
+
+  <!-- ============ LOGIN ============ -->
+  <main id="loginView" class="login" hidden>
+    <form class="login-card" id="loginForm">
+      <a href="/" class="logo"><img src="logo-icon.svg" alt="" width="32" height="32" />GM Web Co.</a>
+      <h1>Admin</h1>
+      <p class="muted">Enter the password to see your meetings.</p>
+      <label>Password
+        <input type="password" name="password" id="password" autocomplete="current-password" required />
+      </label>
+      <p class="error" id="loginError" role="alert"></p>
+      <button class="btn btn-block" type="submit" id="loginBtn">Log in</button>
+    </form>
+  </main>
+
+  <!-- ============ DASHBOARD ============ -->
+  <div id="appView" hidden>
+    <header class="a-top">
+      <div class="a-wrap a-top-inner">
+        <a href="/" class="logo"><img src="logo-icon.svg" alt="" width="32" height="32" />GM Web Co. <em class="a-badge">Admin</em></a>
+        <div class="a-top-actions">
+          <a href="/" target="_blank" class="a-link">View site ↗</a>
+          <button class="a-link" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="a-wrap a-main">
+      <div class="a-head">
+        <div>
+          <h1>Meetings</h1>
+          <p class="muted small" id="updated">Loading…</p>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="refreshBtn">Refresh</button>
+      </div>
+
+      <div class="a-banner" id="googleBanner" hidden></div>
+
+      <section class="a-stats">
+        <div><span id="stToday">–</span><p>Today</p></div>
+        <div><span id="stWeek">–</span><p>Next 7 days</p></div>
+        <div><span id="stUpcoming">–</span><p>Upcoming</p></div>
+        <div><span id="stTotal">–</span><p>All time</p></div>
+      </section>
+
+      <div class="a-toolbar">
+        <div class="a-tabs" id="tabs" role="group" aria-label="Filter meetings">
+          <button type="button" data-tab="upcoming" class="active" aria-pressed="true">Upcoming <i id="cUpcoming"></i></button>
+          <button type="button" data-tab="past" aria-pressed="false">Past <i id="cPast"></i></button>
+          <button type="button" data-tab="cancelled" aria-pressed="false">Cancelled <i id="cCancelled"></i></button>
+          <button type="button" data-tab="all" aria-pressed="false">All <i id="cAll"></i></button>
+        </div>
+        <input type="search" id="search" placeholder="Search name, business, email…" aria-label="Search meetings" />
+      </div>
+
+      <div id="list" class="a-list"></div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

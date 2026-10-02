@@ -1,0 +1,10 @@
+# Never upload secrets or local data
+config.json
+data/
+.claude/
+node_modules/
+.DS_Store
+.env*
+
+# Local-only dev server (Vercel uses api/index.js)
+server.js

@@ -1,0 +1,36 @@
+/* TEMPORARY navy + slate test. Remove its link in index.html to restore.
+   Color overrides only; original styles and motion remain unchanged. */
+:root {
+  color-scheme: light;
+  --ink: #f7f9fc;
+  --ink-2: #edf1f7;
+  --ink-3: #e1e8f1;
+  --bone: #172b4d;
+  --paper: #f7f9fc;
+  --paper-ink: #172b4d;
+  --dim: #475569;
+  --faint: #526177;
+  --line: #cbd5e1;
+  --pink: #2457a7;
+  --pink-deep: #2457a7;
+  --pink-ink: #ffffff;
+}
+.hero { background: radial-gradient(90% 80% at 80% 45%, #ffffff 0%, var(--ink) 65%); }
+.nav::before { background: rgba(247, 249, 252, .94); border-bottom-color: #cbd5e1; }
+.nav.on-paper::before { background: rgba(237, 241, 247, .94); border-bottom-color: #cbd5e1; }
+.paper { --dim: #475569; --faint: #526177; --line: #cbd5e1; }
+.proof-body { background: #ffffff; --dim: #475569; }
+.proof-body::before { background: rgba(108, 134, 169, .55); }
+.proof-lead, .fine-print span, .fine-print .empty p, .signed small { color: #526177; }
+.fine-print li, .sig { border-color: #cbd5e1; }
+.fine-print a:hover { color: var(--pink-deep); }
+.day.active small { color: #e2e8f0; }
+.day.active .open-count, .finale-title em { color: #b7d4ff; }
+.book-form select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23172b4d' stroke-opacity='.8'/%3E%3C/svg%3E"); }
+.error { color: #b42318; }
+.clock .live { color: #237047; }
+.motion-ribbon { background: #172b4d; color: #f7f9fc; }
+@media (prefers-reduced-motion: no-preference) {
+  .js .statement-word { color: #64748b; }
+  .js .statement-word.lit { color: var(--bone); }
+}
