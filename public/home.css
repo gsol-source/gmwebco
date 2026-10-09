@@ -2097,3 +2097,6 @@ summary:hover {
   flex-direction:column;
   justify-content:center;
 }
+/* Only the real portfolio project remains. */
+.work-grid { grid-template-columns:1fr; }
+.work-grid .project-offset { margin-top:0; }

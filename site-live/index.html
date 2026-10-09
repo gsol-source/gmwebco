@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <title>GM Web Co. — Websites for Miami businesses</title>
+  <meta name="description" content="GM Web Co. is a two-person web studio in Miami. We design and build websites for local businesses. Book a free call." />
+  <meta property="og:title" content="GM Web Co. — Websites for Miami businesses" />
+  <meta property="og:description" content="A two-person web studio in Miami. We build, manage and connect your website to Google. Book a free call." />
+  <meta property="og:image" content="https://gmwebco.com/og-cover.jpg" />
+  <meta property="og:url" content="https://gmwebco.com/" />
+  <link rel="canonical" href="https://gmwebco.com/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "GM Web Co.",
+    "url": "https://gmwebco.com/",
+    "logo": "https://gmwebco.com/logo-512.png",
+    "image": "https://gmwebco.com/og-cover.jpg",
+    "description": "Two-person web design studio in Miami. We build websites for local businesses, manage them, and connect them to Google.",
+    "email": "gm.webco.com@gmail.com",
+    "telephone": "+1-786-708-2049",
+    "founder": [{ "@type": "Person", "name": "Galileo S." }, { "@type": "Person", "name": "Matthew M." }],
+    "address": { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
+    "areaServed": { "@type": "City", "name": "Miami" },
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "17:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "20:00" }
+    ]
+  }
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="logo-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><img src="logo-icon.svg" alt="" width="32" height="32" />GM Web Co.</a>
+      <div class="nav-meta">
+        <span class="live-dot"></span>
+        <span>Miami <b id="clock">--:--</b></span>
+      </div>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book" class="btn btn-sm magnetic">Book a call</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker reveal"><span class="pill">Web design</span> Websites for local businesses in Miami</p>
+          <h1 class="split">We make <em>websites</em> for Miami businesses.</h1>
+          <p class="lead reveal" style="--d:.5s">A fast, custom website that shows up on Google and turns visitors into calls and bookings. Starting at $250, with a fixed price agreed before we start.</p>
+          <div class="hero-cta reveal" style="--d:.65s">
+            <a href="#book" class="btn magnetic">Book a free call <span class="arrow">→</span></a>
+            <a href="#pricing" class="hero-secondary">See pricing ↓</a>
+          </div>
+        </div>
+
+        <!-- What you get -->
+        <div class="get reveal" style="--d:.3s">
+          <div class="get-card">
+            <p class="get-label">What you get</p>
+            <ul class="get-list">
+              <li><b>A custom website, not a template</b><span>Designed around your business</span></li>
+              <li><b>Works on phones and computers</b><span>Looks right on every screen</span></li>
+              <li><b>Connected to your Google page</b><span>So customers can find you</span></li>
+              <li><b>We manage it for you</b><span>Updates and fixes are on us</span></li>
+              <li><b>You talk to the two of us</b><span>No middlemen, no ticket system</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCROLL TRANSFORMATION STAGE -->
+    <section class="stage" id="stage" aria-label="An outdated website is taken apart and rebuilt as a modern one">
+      <div class="stage-pin">
+        <canvas aria-hidden="true"></canvas>
+        <ol class="stage-steps" aria-hidden="true"><li class="on">Before</li><li>Process</li><li>After</li></ol>
+        <div class="stage-caps">
+          <p class="cap on"><b>Your website today.</b> Dated, slow on a phone and easy to scroll past.</p>
+          <p class="cap"><b>We take it apart.</b> Every section, image and button gets a second look.</p>
+          <p class="cap"><b>And rebuild it around your customers.</b> Clear, fast and made to get the call.</p>
+          <p class="cap"></p>
+        </div>
+        <div class="stage-outro">
+          <h2>We turn outdated websites into experiences that sell.</h2>
+          <a href="#book" class="btn">Book a free call <span class="arrow">→</span></a>
+        </div>
+        <div class="stage-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="label reveal">Services</p>
+          <h2 class="reveal">What we do</h2>
+        </div>
+        <ol class="services">
+          <li class="reveal"><a class="service" href="#book"><span class="s-num" aria-hidden="true">01</span><h3>We build your site</h3><p>A custom-designed website that looks right on every phone, tablet and laptop. No templates that look like everyone else’s.</p><span class="s-arrow" aria-hidden="true">→</span></a></li>
+          <li class="reveal"><a class="service" href="#book"><span class="s-num" aria-hidden="true">02</span><h3>We manage it</h3><p>Hosting, fixes and updates handled for you. New photos, new hours, new prices — text us and it’s done.</p><span class="s-arrow" aria-hidden="true">→</span></a></li>
+          <li class="reveal"><a class="service" href="#book"><span class="s-num" aria-hidden="true">03</span><h3>We connect it to Google</h3><p>We link your site to your Google Business page, so people who find you on Google Search and Maps can click straight through.</p><span class="s-arrow" aria-hidden="true">→</span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section team">
+      <div class="container team-grid">
+        <div class="team-copy">
+          <p class="label reveal">Team</p>
+          <h2 class="reveal">Two people. <em>Same job.</em></h2>
+          <p class="muted reveal">We both plan, design and build every site, and we’re both on your call. No handoffs, no account managers.</p>
+          <p class="muted reveal">We’re a young Miami studio and we don’t hide it. You get our full attention, honest advice and a site you own.</p>
+        </div>
+        <div class="people">
+          <figure class="person reveal">
+            <div class="person-img"><img src="team/galileo.jpg" alt="Cartoon portrait of Galileo S." width="720" height="720" loading="lazy" decoding="async" /></div>
+            <figcaption><b>Galileo S.</b><span>Founder · Design &amp; development</span></figcaption>
+          </figure>
+          <figure class="person reveal" style="--d:.12s">
+            <div class="person-img"><img src="team/matthew.jpg" alt="Cartoon portrait of Matthew M." width="720" height="720" loading="lazy" decoding="async" /></div>
+            <figcaption><b>Matthew M.</b><span>Co-founder · Design &amp; development</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="label reveal">Process</p>
+          <h2 class="reveal">From first call to launch</h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line"><span id="timelineFill"></span></div>
+          <div class="step reveal"><span class="step-dot"></span><p class="step-when">Day 1</p><h3>Free call</h3><p>We learn about your business, goals and budget over Google Meet.</p></div>
+          <div class="step reveal" style="--d:.1s"><span class="step-dot"></span><p class="step-when">Day 2</p><h3>Quote</h3><p>A clear plan and a fixed price, agreed in writing before any work starts.</p></div>
+          <div class="step reveal" style="--d:.2s"><span class="step-dot"></span><p class="step-when">Under a week</p><h3>Build</h3><p>You see live previews and ask for changes along the way. Bigger custom requests can take a bit longer.</p></div>
+          <div class="step reveal" style="--d:.3s"><span class="step-dot"></span><p class="step-when">Launch</p><h3>Go live</h3><p>We connect your domain, launch, and stay on call for updates.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING (menu style) -->
+    <section id="pricing" class="section">
+      <div class="container pricing-grid">
+        <div>
+          <p class="label reveal">Pricing</p>
+          <h2 class="reveal">The menu</h2>
+          <p class="muted reveal">Fixed prices, agreed before we start. Not sure which fits? Tell us what you need on the free call and we’ll point you to the right one.</p>
+        </div>
+        <div class="menu">
+          <details class="menu-item reveal" open>
+            <summary><span class="menu-name">Starter</span><span class="menu-dots"></span><span class="menu-price">$250</span></summary>
+            <div class="menu-body"><p>Best for: a business that needs a clean, professional page with its hours, services and contact details.</p><ul><li>Up to 4 pages</li><li>Custom design</li><li>Contact form &amp; Google Map</li><li>Mobile-friendly</li></ul><a href="#book" class="menu-link" data-package="Starter">Talk about Starter →</a></div>
+          </details>
+          <details class="menu-item reveal" style="--d:.08s">
+            <summary><span class="menu-name">Business <em>recommended</em></span><span class="menu-dots"></span><span class="menu-price">$300</span></summary>
+            <div class="menu-body"><p>Best for: an established business that wants to be found on Google and win more enquiries.</p><ul><li>Up to 6 pages</li><li>Custom design</li><li>Contact form &amp; Google Map</li><li>Mobile-friendly</li><li>Connected to your Google page</li></ul><a href="#book" class="menu-link" data-package="Business">Talk about Business →</a></div>
+          </details>
+          <details class="menu-item reveal" style="--d:.16s">
+            <summary><span class="menu-name">Premium</span><span class="menu-dots"></span><span class="menu-price">$500</span></summary>
+            <div class="menu-body"><p>Best for: a business with lots to show, such as menus, services or galleries.</p><ul><li>Up to 12 pages</li><li>Custom design</li><li>Contact form &amp; Google Map</li><li>Mobile-friendly</li><li>Connected to your Google page</li><li>Priority updates</li></ul><a href="#book" class="menu-link" data-package="Premium">Talk about Premium →</a></div>
+          </details>
+          <details class="menu-item reveal" style="--d:.24s">
+            <summary><span class="menu-name">Care plan</span><span class="menu-dots"></span><span class="menu-price">$49<small>/mo</small></span></summary>
+            <div class="menu-body"><p>Optional. We host your site, keep it running and make updates whenever you need them: new hours, prices or photos. Cancel any time, and your site stays yours.</p></div>
+          </details>
+          <p class="menu-note reveal"><span>How it works</span> Half to start, half when your site goes live. Your domain, text and photos are yours from day one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="book" class="section section-dark book-section">
+      <div class="container book-grid">
+        <div class="book-copy">
+          <p class="label reveal">Let’s talk</p>
+          <h2 class="reveal">Book a free <em>Google Meet.</em></h2>
+          <p class="reveal">Pick a time. In 30 minutes we’ll figure out what your site needs and what it should cost. No pressure, no commitment.</p>
+          <figure class="duo reveal">
+            <img src="team/together-900.jpg" srcset="team/together-900.jpg 900w, team/together.jpg 1400w" sizes="(max-width: 980px) 92vw, 460px" alt="Cartoon of Galileo S. and Matthew M., the founders of GM Web Co." width="1400" height="940" loading="lazy" decoding="async" />
+            <figcaption>You’ll be talking to <b>Galileo</b> &amp; <b>Matthew</b></figcaption>
+          </figure>
+          <ul class="book-points reveal">
+            <li>Meet link sent to your email</li>
+            <li>Bring ideas — or nothing at all</li>
+            <li>Get a price on the call</li>
+          </ul>
+          <p class="contact-line">Rather email or call? <a href="mailto:gm.webco.com@gmail.com">gm.webco.com@gmail.com</a> · <a href="tel:+17867082049">(786) 708-2049</a></p>
+          <p class="small faint" id="tzNote"></p>
+        </div>
+
+        <div class="book-card reveal" id="bookCard">
+          <div id="step1">
+            <p class="book-step"><span>1</span> Pick a date</p>
+            <div class="days" id="days"><p class="muted small">Loading available times…</p></div>
+            <p class="book-step"><span>2</span> Pick a time</p>
+            <div class="times" id="times"><p class="muted small">Select a date first.</p></div>
+          </div>
+
+          <form id="bookForm" class="book-form" novalidate>
+            <p class="book-step"><span>3</span> Your details</p>
+            <div class="field-row">
+              <label>Name<input name="name" required autocomplete="name" /></label>
+              <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+            </div>
+            <details class="more-details">
+            <summary>Add more details <span class="optional">optional, helps us prepare</span></summary>
+            <div class="field-row">
+              <label>Phone <span class="optional">optional</span><input name="phone" type="tel" autocomplete="tel" /></label>
+              <label>Business <span class="optional">optional</span><input name="business" autocomplete="organization" /></label>
+            </div>
+            <div class="field-row">
+              <label>Package
+                <select name="package" id="packageSelect">
+                  <option value="">Not sure yet</option>
+                  <option>Starter</option>
+                  <option>Business</option>
+                  <option>Premium</option>
+                  <option>I already have a site</option>
+                </select>
+              </label>
+              <label>Budget
+                <select name="budget">
+                  <option value="">Prefer to discuss</option>
+                  <option>Under $250</option>
+                  <option>$250 – $300</option>
+                  <option>$300 – $500</option>
+                  <option>$500+</option>
+                </select>
+              </label>
+            </div>
+            <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off" /></label></div>
+            <label>About your project <span class="optional">optional</span><textarea name="notes" rows="3"></textarea></label>
+            </details>
+            <p class="selected" id="selectedText" aria-live="polite">No time selected.</p>
+            <p class="error" id="formError" role="alert"></p>
+            <button class="btn btn-block" type="submit" id="submitBtn" disabled>Confirm my free call</button>
+          </form>
+
+          <div id="confirm" class="confirm" hidden>
+            <div class="check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-15" /></svg></div>
+            <h3>You’re booked.</h3>
+            <p id="confirmWhen"></p>
+            <p id="confirmMsg" class="muted"></p>
+            <div class="confirm-actions">
+              <a id="meetLink" class="btn" target="_blank" rel="noopener" hidden>Open Google Meet</a>
+              <a id="gcalLink" class="btn btn-ghost" target="_blank" rel="noopener">Add to Google Calendar</a>
+            </div>
+            <p class="manage-note"><a id="manageLink" href="#" hidden>Need to change or cancel? Use this link</a></p>
+            <button class="link-btn" id="bookAnother">Book another time</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container faq-grid">
+        <div>
+          <p class="label reveal">FAQ</p>
+          <h2 class="reveal">Good questions</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>How long does a website take?</summary><p>Most sites are done in under a week. If you need more specific or custom features, it can take a little longer — we’ll give you a clear timeline on our call.</p></details>
+          <details class="reveal"><summary>Do I need my content ready?</summary><p>No. We can help write your text and pick photos.</p></details>
+          <details class="reveal"><summary>Can I update the site myself?</summary><p>You don’t have to — on a care plan, just text us what you want changed and we’ll update it.</p></details>
+          <details class="reveal"><summary>Who owns my website?</summary><p>You do. Your domain is registered in your name, and your text and photos are yours. If you ever want to move on, we’ll hand everything over.</p></details>
+          <details class="reveal"><summary>Do I have to pay monthly?</summary><p>No. The $49/month care plan is optional and covers hosting, updates and fixes. If you’d rather not, we’ll set your site up so you can host it yourself.</p></details>
+          <details class="reveal"><summary>How does payment work?</summary><p>Half when we start and half when your site goes live. We agree on the fixed price before any work begins, so there are no surprise fees.</p></details>
+          <details class="reveal"><summary>Can you work with my budget?</summary><p>Tell us what you can spend on the call. We’ll recommend the package that fits, or suggest what to do first and add the rest later.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#book" class="footer-big">Let’s build <em>yours.</em> <span class="arrow">→</span></a>
+      <div class="footer-row">
+        <span class="logo"><img src="logo-icon.svg" alt="" width="32" height="32" />GM Web Co.</span>
+        <span class="footer-links small">
+          <a href="mailto:gm.webco.com@gmail.com">gm.webco.com@gmail.com</a>
+          <a href="tel:+17867082049">(786) 708-2049</a>
+          <a href="/privacy">Privacy</a>
+          <a href="#top">Back to top ↑</a>
+        </span>
+        <span class="faint small">Miami, FL · Mon–Fri 5–9pm, Sat–Sun 10am–8pm · © <span id="year"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+  <script type="module" src="stage.js"></script>
+</body>
+</html>

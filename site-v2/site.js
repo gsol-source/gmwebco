@@ -95,6 +95,7 @@ updateTimeline();
   try { items = JSON.parse($('#testimonialData').textContent) || []; } catch { /* leave empty */ }
   const grid = $('#quotes');
   if (!items.length) return;
+  $('#proof').hidden = false;
   $('#quotesEmpty').hidden = true;
   const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   grid.innerHTML = items.map(q => `

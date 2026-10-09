@@ -1,5 +1,5 @@
 // GM Web Co. — local web server (no dependencies, just Node 18+)
-// Run: node server.js   then open http://localhost:3050
+// Run: node server-v2.js   then open http://localhost:3060
 // On Vercel, api/index.js is used instead; both share lib/app.js.
 
 const http = require('http');
@@ -51,7 +51,7 @@ http.createServer((req, res) => {
   if (pathname.startsWith('/api/')) return handle(req, res, pathname);
   if (req.method === 'GET') return serveStatic(res, decodeURIComponent(pathname));
   send(res, 405, { error: 'Method not allowed' });
-}).listen(PORT, async () => {
+}).listen(PORT, '127.0.0.1', async () => {
   const base = `http://localhost:${PORT}`;
   const google = (await googleConnected()) ? 'connected'
     : googleConfigured() ? 'not connected — log in to admin and click Connect' : 'not set up (see README.md)';

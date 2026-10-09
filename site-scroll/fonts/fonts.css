@@ -1,0 +1,6 @@
+/* Latin subsets, self-hosted (SIL OFL): Bricolage Grotesque, Instrument Sans, Instrument Serif.
+   Preloaded from index.html so the headline never reflows when the font arrives. */
+@font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500 700; font-display: swap; src: url(BricolageGrotesque-500.woff2) format('woff2'); }
+@font-face { font-family: 'Instrument Sans'; font-style: normal; font-weight: 400 600; font-display: swap; src: url(InstrumentSans-400.woff2) format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: normal; font-weight: 400; font-display: swap; src: url(InstrumentSerif-400.woff2) format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; font-display: swap; src: url(InstrumentSerif-it-400.woff2) format('woff2'); }

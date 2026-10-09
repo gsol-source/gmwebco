@@ -8,8 +8,12 @@
   <title>Miami Web Design for Local Businesses | GM Web Co.</title>
   <meta name="description" content="GM Web Co. is a Miami web design studio. We build fast, mobile-first websites for local businesses that get found on Google and turn visitors into calls and bookings. Book a free call." />
   <meta name="author" content="GM Web Co." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="geo.region" content="US-FL" />
+  <meta name="geo.placename" content="Miami" />
   <link rel="canonical" href="https://gmwebco.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="GM Web Co." />
   <meta property="og:title" content="GM Web Co. | Miami web design for local businesses" />
   <meta property="og:description" content="Fast, modern, mobile-first websites that bring local businesses more customers. Book a free call." />
@@ -35,6 +39,9 @@
         "image": "https://gmwebco.com/og-cover.jpg",
         "description": "Miami web design studio building fast, mobile-first websites for local businesses.",
         "email": "hello@gmwebco.com",
+        "telephone": "+1-786-708-2049",
+        "sameAs": ["https://www.tiktok.com/@gm.web.co", "https://www.instagram.com/gmwebco/"],
+        "contactPoint": { "@type": "ContactPoint", "telephone": "+1-786-708-2049", "email": "hello@gmwebco.com", "contactType": "sales", "areaServed": "US", "availableLanguage": ["English", "Spanish"] },
         "founder": [{ "@type": "Person", "name": "Galileo S." }, { "@type": "Person", "name": "Matthew M." }],
         "address": { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
         "areaServed": [{ "@type": "City", "name": "Miami" }, { "@type": "AdministrativeArea", "name": "Miami-Dade County" }],
@@ -63,7 +70,7 @@
     ]
   }
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="logo-512.png" type="image/png" sizes="512x512" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -71,16 +78,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cinematic.css" />
 </head>
-<body id="top">
+<body id="top" class="studio-home">
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav">
     <div class="container nav-inner">
       <a href="#top" class="logo" aria-label="GM Web Co., back to top"><img src="logo-icon.svg" alt="" width="32" height="32" />GM Web Co.</a>
       <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#work">Selected work</a>
         <a href="#services">Services</a>
-        <a href="#why">Why GM</a>
-        <a href="#process">Process</a>
+        <a href="#team">The studio</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="#book" class="btn btn-sm">Book a Free Call</a>
@@ -90,35 +98,26 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
+    <!-- Studio introduction. Only real projects appear in the portfolio. -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="kicker reveal">Miami web design studio</p>
-          <h1 id="hero-title" class="split">Websites that bring Miami businesses <em>more customers.</em></h1>
-          <p class="lead reveal" style="--d:.45s">GM Web Co. designs fast, modern websites for local businesses. Built for phones, built to be found on Google, and built to turn visitors into calls and bookings.</p>
-          <div class="hero-cta reveal" style="--d:.6s">
-            <a href="#book" class="btn">Book a Free Strategy Call <span class="arrow" aria-hidden="true">→</span></a>
-            <a href="#services" class="btn btn-ghost">See What We Do</a>
-          </div>
-          <p class="hero-assure reveal" style="--d:.7s">Free 30-minute call. No pressure, no commitment.</p>
+      <div class="container">
+        <div class="hero-topline"><p class="kicker">Independent web studio / Miami, FL</p><span class="availability"><i aria-hidden="true"></i> Open for new projects</span></div>
+        <div class="hero-editorial">
+          <h1 id="hero-title">Good businesses.<br /> <em>Unforgettable</em><br />websites<span class="period">.</span></h1>
+          <div class="hero-side"><span class="editorial-mark" aria-hidden="true">↗</span><p>For the local businesses<br />with something to offer.<br /><strong>And more people to reach.</strong></p><p class="hero-description">Custom websites that turn a first impression into your next customer.</p><a href="#book" class="btn">Book a free call <span aria-hidden="true">↗</span></a><a href="#work" class="quiet-link">Explore our work ↓</a></div>
         </div>
-        <aside class="hero-card reveal" style="--d:.3s" aria-labelledby="hc-title">
-          <p class="hc-eyebrow"><span class="hc-dot" aria-hidden="true"></span> Taking new projects</p>
-          <h2 id="hc-title">Free 30-minute website call</h2>
-          <p class="hc-sub">Talk to the two people who would build your site. No pressure, no commitment.</p>
-          <p class="hc-label">Next open times</p>
-          <div class="hc-times" id="hcTimes" aria-live="polite"><span class="hc-skel"></span><span class="hc-skel"></span><span class="hc-skel"></span></div>
-          <a href="#book" class="btn btn-block">Choose a Time <span class="arrow" aria-hidden="true">→</span></a>
-          <ul class="hc-list">
-            <li>Review your current website</li>
-            <li>Get ideas, pricing and a timeline</li>
-            <li>Most sites live in about a week</li>
-          </ul>
-        </aside>
+        <div class="hero-baseline"><span>Designed in Miami. Built around you.</span><a href="#work">Scroll to discover <span aria-hidden="true">↓</span></a></div>
       </div>
     </section>
-
+    <section id="work" class="section selected-work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head split-head"><div><p class="label reveal">01 / Selected work</p><h2 id="work-title" class="reveal">Made for a business.<br /><em>Never just a browser.</em></h2></div><p class="reveal">A distinct point of view.<br />A clear next step.<br />A website that feels like you.</p></div>
+        <div class="portfolio-grid">
+          <article class="portfolio-item"><a href="https://sobay-spotlight.mich012801.chatgpt.site/" target="_blank" rel="noopener" class="portfolio-image sobay-image" data-scene aria-label="Visit SoBay Spotlights, a live project (opens in a new tab)"><span class="portfolio-category">SCHOOL MEDIA / LIVE PROJECT</span><div class="portfolio-browser" data-depth="front"><div class="window-chrome"><span>SoBay Spotlights</span><span>↗</span></div><img src="work/sobay-desktop-800.jpg" width="800" height="500" loading="lazy" decoding="async" alt="SoBay Spotlights school media website" /></div><span class="portfolio-arrow" aria-hidden="true">↗</span></a><div class="portfolio-meta"><h3>SoBay Spotlights</h3><span>A home for the stories that matter.</span></div></article>
+        </div>
+        <div class="work-end"><p>SoBay Spotlights / Live project</p><a class="quiet-link" href="#book">Your business could be next ↗</a></div>
+      </div>
+    </section>
     <!-- TRUST -->
     <section class="trust" aria-label="What you can count on">
       <ul class="container trust-list">
@@ -136,7 +135,7 @@
       <div class="container">
         <div class="section-head split-head">
           <div>
-            <p class="label reveal">Services</p>
+            <p class="label reveal">02 / What we do</p>
             <h2 id="services-title" class="reveal">What your website <em>does for you.</em></h2>
           </div>
           <p class="reveal">Everything is designed around one outcome: more customers getting in touch.</p>
@@ -176,7 +175,7 @@
     <section class="section" id="process" aria-labelledby="process-title">
       <div class="container process-grid">
         <div class="process-intro">
-          <p class="label reveal">Process</p>
+          <p class="label reveal">03 / The process</p>
           <h2 id="process-title" class="reveal">From first call to <em>launch day.</em></h2>
           <p class="muted reveal">Five simple steps, so you always know what happens next.</p>
           <a href="#book" class="btn reveal">Start Your Project <span class="arrow" aria-hidden="true">→</span></a>
@@ -195,7 +194,7 @@
     <section id="team" class="section section-alt" aria-labelledby="team-title">
       <div class="container">
         <div class="team-lead">
-          <p class="label reveal">The founders</p>
+          <p class="label reveal">04 / The people behind the pixels</p>
           <h2 id="team-title" class="reveal">We started GM Web Co. because too many great local businesses have <em>outdated websites.</em></h2>
           <p class="muted reveal">We’re a young studio, and we don’t hide it. What you get is full attention, honest advice and work you can see for yourself. Every project is designed and built by the two of us.</p>
         </div>
@@ -223,7 +222,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="proof" class="section" aria-labelledby="proof-title">
+    <section id="proof" hidden class="section" aria-labelledby="proof-title">
       <div class="container">
         <div class="section-head split-head">
           <div>
@@ -236,7 +235,7 @@
         <div class="quotes" id="quotes"></div>
         <div class="quotes-empty reveal" id="quotesEmpty">
           <p class="quotes-lede">We would rather show you real words than invented ones.</p>
-          <p class="muted">Client feedback will appear here as our first projects launch. Until then, a free call are the best way to judge us.</p>
+          <p class="muted">Client feedback will appear here as our first projects launch. Until then, a free call is the best way to judge us.</p>
           <a href="#book" class="btn btn-ghost">Talk to Us First <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -247,7 +246,7 @@
       <div class="container">
         <div class="section-head split-head">
           <div>
-            <p class="label reveal">Pricing</p>
+            <p class="label reveal">05 / A clear investment</p>
             <h2 id="pricing-title" class="reveal">Custom websites at <em>accessible prices.</em></h2>
           </div>
           <p class="reveal">Every package is designed and built by hand, with a fixed quote agreed before we start.</p>
@@ -319,8 +318,8 @@
     <section id="book" class="section section-dark book-section" aria-labelledby="book-title">
       <div class="container book-grid">
         <div class="book-copy">
-          <p class="label reveal">Book a call</p>
-          <h2 id="book-title" class="reveal">Book a free <em>website call.</em></h2>
+          <p class="label reveal">Your next chapter</p>
+          <h2 id="book-title" class="reveal">Let’s make<br /><em>an impression.</em></h2>
           <p class="reveal">A relaxed 30-minute Google Meet with the two people who would build your site. We’ll talk about:</p>
           <ul class="book-points reveal">
             <li>Your current website</li>
@@ -330,7 +329,8 @@
             <li>Pricing and timeline</li>
           </ul>
           <p class="book-assure reveal"><b>No pressure. No commitment.</b> You’ll leave with a clear idea of what your website needs and what it costs.</p>
-          <p class="contact-line">Prefer email? <a href="mailto:hello@gmwebco.com">hello@gmwebco.com</a></p>
+          <p class="contact-line">Prefer email or a call? <a href="mailto:hello@gmwebco.com">hello@gmwebco.com</a> · <a href="tel:+17867082049">(786) 708-2049</a></p>
+          <div class="booking-availability"><p class="hc-label">Next open times</p><div class="hc-times" id="hcTimes" aria-live="polite"></div></div>
           <p class="small faint" id="tzNote"></p>
         </div>
 
@@ -410,10 +410,14 @@
         <div class="footer-col">
           <b>Contact</b>
           <a href="mailto:hello@gmwebco.com">hello@gmwebco.com</a>
+          <a href="tel:+17867082049">(786) 708-2049</a>
+          <a href="https://www.instagram.com/gmwebco/" target="_blank" rel="noopener me">Instagram</a>
+          <a href="https://www.tiktok.com/@gm.web.co" target="_blank" rel="noopener me">TikTok</a>
           <a href="#book">Book a Free Call</a>
           <span>Miami, Florida</span>
         </div>
       </div>
+      <p class="footer-signature" aria-hidden="true">Good company.</p>
       <div class="footer-row">
         <span class="small faint">© <span id="year">2026</span> GM Web Co. All rights reserved.</span>
         <span class="footer-links small"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms</a></span>
@@ -422,5 +426,6 @@
   </footer>
 
   <script src="site.js"></script>
+  <script src="cinematic.js"></script>
 </body>
 </html>

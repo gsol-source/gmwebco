@@ -63,7 +63,6 @@ Done — the admin page will show "Google Calendar connected".
 
 - Homepage text, prices, FAQ: `public/index.html`
 - Homepage colors & styles: `public/home.css` (tokens at the top) · motion & booking: `public/site.js`
-- Concept sites linked from the portfolio: `public/concepts/*.html` (standalone pages)
 - Privacy and 404 share `public/home.css`; booking management still uses `public/styles.css`
 - Previous homepages are in `backups/`
 - Booking & admin logic: `lib/app.js` (storage in `lib/store.js`)
@@ -80,3 +79,60 @@ The homepage now uses an editorial layout with Instrument Serif and Manrope, a w
 ## Local rebuild (site-v2) — October 1, 2026
 
 `site-v2/` is the improved live gmwebco.com design (cream / ink / orange), local only. Run it with `node server-v2.js` → http://localhost:3060 (site-v2 files first, everything else falls back to `public/`). Testimonials go in the `#testimonialData` JSON block in `site-v2/index.html`. The previous local redesign is saved in `backups/local-redesign-2026-10-01/`.
+
+## Cinematic studio edition — October 3, 2026
+
+Run `node server-v2.js` and visit http://localhost:3060. The preview binds to
+`127.0.0.1` only. Nothing was deployed and no domain settings were changed.
+
+The latest design lives in `site-v2/index.html`, with the visual layer in
+`site-v2/cinematic.css` and scroll depth in `site-v2/cinematic.js`. Existing
+booking APIs, package prices, administration are preserved. The empty testimonials section stays hidden until real entries are
+added to `testimonialData`.
+
+Motion uses native scrolling, perspective transforms, and an IntersectionObserver
+with one requestAnimationFrame per scroll event batch. Only visible project
+scenes update. Small screens receive reduced displacement; reduced-motion
+preferences disable the depth effects, including preference changes while open.
+No video autoplay or animation dependencies are added.
+
+### Asset budget
+
+Higgsfield credits spent on this revision: **0 / 20**. Higgsfield was not available
+through the connected tools or installable connectors. Existing project imagery
+was reused; no substitute image generator was used. Optional future allocation:
+up to 12 credits for one hero image, up to 8 for a necessary revision, only after
+verifying actual generation costs. These are spending ceilings, not price quotes.
+Do not generate if the total cannot be confirmed to stay within 20 credits.
+
+### Local verification
+
+Chromium checks passed at 320, 390, 768, 1024, and 1440px: no horizontal overflow
+or JavaScript errors; menu open/Escape, pricing package selection, available-day
+and time selection, and invalid-form validation work. Reduced-motion transforms
+were verified. Booking submissions were not sent, so no real appointments or
+calendar invitations were created during design QA.
+
+
+## Portfolio policy — October 3, 2026
+
+The user requested permanent removal of fictional concept projects. Their public
+pages and dedicated media have been deleted. Only real work belongs in the
+portfolio; do not reintroduce fictional brands or restore concepts from older
+backups. SoBay Spotlights remains. This change is local only.
+
+## Scroll-polish edition (site-scroll) — October 4, 2026
+
+A copy of `site-live/` with a refined homepage scroll. Run `node server-scroll.js` → http://localhost:3090
+(binds to 127.0.0.1 only; nothing deployed). `site-live/` (3080) and `site-v2/` (3060) are untouched.
+
+- `site-scroll/depth.js` — small depth engine: `[data-depth]` layers move at a fraction of scroll speed
+  (transform only, one rAF per scroll batch, idle when off screen, fully off under reduced motion).
+- Hero has a palm-shadow plate behind the copy and the card drifting at different rates; the stage
+  seam is gone; Services slides over the stage like a sheet; team portraits counter-drift; the page
+  ends on a dusk Miami plate.
+- Stage fixes: caption no longer collides with the exploded parts; outro appears only after the device lift.
+- Fonts are self-hosted and preloaded (`site-scroll/fonts/`), which removed the headline reflow that
+  was shifting the stage (CLS 0.07 → 0.00).
+- Higgsfield: 4 stills with gpt_image_2_5 (2 palm-shadow plates, 2 dusk plates), about 1 credit total.
+  Used `media/hero-plate.jpg` and `media/close-dusk.jpg`; unused originals are in `scrollcraft-src/`.
